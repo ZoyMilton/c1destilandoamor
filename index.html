@@ -1,0 +1,29 @@
+<div class='video'>
+  <script src="https://use.fontawesome.com/20603b964f.js"></script>
+  <script type="text/javascript" src="https://content.jwplatform.com/libraries/LJ361JYj.js"></script>
+  <script type="text/javascript">
+    jwplayer.key = 'ypdL3Acgwp4Uh2/LDE9dYh3W/EPwDMuA2yid4ytssfI=';
+    // jwplayer.key = 'ITWMv7t88JGzI0xPwW8I0+LveiXX9SWbfdmt0ArUSyc=';
+  </script>
+  <div id="myElement"></div>
+  <script type="text/javascript">
+    jwplayer("myElement").setup({
+      image: "https://imgs.search.brave.com/KxO_xrByI7pksIyyydkQDZGl6SCNz1-az0ZDtgM_JFE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/anVzdHdhdGNoLmNv/bS9pbWFnZXMvYmFj/a2Ryb3AvMjkzOTM3/MTkyL3MxNDQwL2Rl/c3RpbGFuZG8tYW1v/cg.jpeg",
+      //aspectratio: "16:9",
+      // width: '100%',
+      height: window.innerHeight,
+      autostart: true,
+      file : 'https://dcs-vod.mp.lura.live/vod/p/2266400/prog.m3u8?i=i176955739-n91db89ec-95bc-4f66-b1a4-7e6043658794&anvtrid=5ad5a9ab42b36c4a21f0cd92d03a849f',
+      title: 'ZoyTV+',
+      description: 'Somos un mal necesario...',
+      aboutlink: 'https://www.jwplayer.com/',
+      tracks:[{"file":"<?php echo $cc; ?>","label":"Indonesia","kind":"captions","default":"true"}],
+      captions: {color: '#ffb800',fontSize: 30,backgroundOpacity: 0},
+      sharing: {
+        sites: ['facebook','twitter','tumblr','googleplus',{icon: '//support-static.jwplayer.com/images/awesome.svg', src: 'http://www.jwplayer.com/?', label:'jwplayer'}],
+        code: encodeURI("<iframe src='<?php echo $sharing;?>' width='480' height='320'></iframe>"),
+        link: "<?php echo $sharing;?>"
+      }
+    })
+  </script>
+</div>
